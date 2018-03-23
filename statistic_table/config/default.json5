@@ -1,0 +1,42 @@
+{
+    // 项目名称
+    name: 'statistic_table',
+    // 程序运行的端口
+    port: '8000',
+    // 域名
+    host: 'localhost',
+    // mongodb 配置
+    mongo: { 
+      url: 'mongodb://127.0.0.1/statistic_table',
+    },
+    // redis 配置， 默认是本地
+    redis: {
+      host: '127.0.0.1',
+      port: 6379,
+      db: 10,
+      pass: ''
+    },
+    session_secret: 'table_secret', // 务必修改
+
+    auth_cookie_name: 'statistic_table',
+
+    // 是否开启mongodb日志
+    mongodb_debug: true,
+    // tb api address
+    api: 'http://salesdemo.teambition.net',
+    // tb login auth address
+    account_api: 'http://salesdemo.teambition.net',
+
+    clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+
+    clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+    // 企业Id 针对二开单企业才会使用到
+    organizationId: '5a42ff2dbe825b73278d13c1',
+
+    projectId: '5aa1e8c33041154ac6f49df8',
+    
+    account: {
+      email: 'oyxj1989@163.com',
+      pwd: 'oyxj19891024'
+    }
+}
