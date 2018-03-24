@@ -15,7 +15,7 @@ export default {
       _headerIds.push(key);
     }
     console.log('headerIds', _headerIds);
-    let tasks = await Task.getTaskById(scenarioId);
+    let tasks = await Task.getTaskByScenarioId(scenarioId);
     let _data = [];
     for (let task of tasks) {
       _data.push(task.customfields)
@@ -38,7 +38,7 @@ export default {
     let workbook = { SheetNames: [`${title.scenarioFieldName}`], Sheets: {}}
     workbook.Sheets[`${title.scenarioFieldName}`] = 
       Object.assign({}, output, { '!ref': ref });
-    xlsx.writeFile(workbook,
+    await xlsx.writeFile(workbook,
       `${moment().format('YYYY-MM-DD')}${title.scenarioFieldName}.xlsx`);
     let filename =  
     `${moment().format('YYYY-MM-DD')}${title.scenarioFieldName}.xlsx`;

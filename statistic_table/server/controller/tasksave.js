@@ -120,6 +120,7 @@ export default {
           task.update = 0;
         }
         if (bool) {
+          console.log('bool', bool);
           await Task.updateTask(task);
         } else {
           await Task.insertTask(task);

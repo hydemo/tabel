@@ -11,7 +11,7 @@ export default {
   },
   //获取项目自定义字段
   async getProjectCustomfield(req, res, next) {
-    let projectId = req.query.projectId;
+    let projectId = req.query.project;
     let token = await teambition.
       access_token(config.account.email, config.account.pwd);
     let result = await teambition.
@@ -39,7 +39,7 @@ export default {
   },
   //获取数据库所有任务类型
   async getDbTask(req, res, next) {
-    let projectId = req.query.projectId;
+    let projectId = req.query.project;
     let task = await Task.findAll(projectId);
     return res.json(task);
   },

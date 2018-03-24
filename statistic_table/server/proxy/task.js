@@ -3,12 +3,25 @@ import { Task } from  '../models/model';
 //封装task数据库操作方法
 export default {
   /**
-   * ----{根据任务类型id搜索任务}----
-   * @param {String} scenarioFieldConfigId 任务类型id
+   * ----{根据任务id搜索任务}----
+   * @param {String} taskId 任务id
    * @returns {object} 返回的task对象
    * @author:oy
    */
-  async getTaskById(scenarioFieldConfigId) {
+  async getTaskById(taskId) {
+    try {
+      return await Task.findOne({ taskId }).exec();
+    } catch (error) {
+      throw new Error(error);
+    }
+  },
+  /**
+   * ----{根据任务类型id搜索任务}----
+   * @param {String}  scenarioFieldConfigId 任务类型id
+   * @returns {object} 返回的task对象
+   * @author:oy
+   */
+  async getTaskByScenarioId(scenarioFieldConfigId) {
     try {
       return await Task.find({ scenarioFieldConfigId }).exec();
     } catch (error) {
@@ -53,7 +66,9 @@ export default {
    * @author:oy
    */
   async findAll(projectId) {
-    return await Task.find({projectId}).exec();
+    return await Task.find({ projectId })
+      .sort({ update: -1 })
+      .exec();
   }, 
   /**
    * ----{根据指定条件搜索数据库，返回查询结果和数量}----
