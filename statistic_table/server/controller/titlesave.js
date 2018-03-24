@@ -35,7 +35,7 @@ export default {
       });       
       return titleFields;
     } catch (err) {
-      throw new Error(err);
+      throw new Error('updateTitleFields-err:', err);
     }
   },
   /**
@@ -67,7 +67,7 @@ export default {
         }
       }      
     } catch (err) {
-      throw new Error(err);
+      throw new Error('titlegroup-err:', err);
     }
     return titles;
   },
@@ -98,7 +98,7 @@ export default {
         }
       }
     } catch (err) {
-      throw new Error(err);
+      throw new Error('updateTitle-err:', err);
     }
   }, 
 }

@@ -7,7 +7,6 @@ export default {
   async downXlsx(req, res, next) {
     const { scenarioId } = req.query;
     let result = await Xlsx.downXlsx(scenarioId);
-    console.log(result);
     let disposition =`attachment; filename=${encodeURI(result.filename)}`;
     res.writeHead(200, {
       'Content-Type': 'application/octet-stream',

@@ -1,0 +1,804 @@
+2018-03-24 23:15:20: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.717] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.721] [INFO] http - [39mGod bless love....
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.722] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.723] [INFO] http - [39m
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.763] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:15:20: [32m[2018-03-24T23:15:20.765] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:15:22: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:15:22: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, scenarioFieldName: [32m'排班表'[39m, scenarioUpdate: [33m1521624688956[39m, titleFields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'安装师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'联系电话'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'安装地址'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'发票号'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'机器型号'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'是否付款'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order或Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'是否已通知客户'[39m } } }, {})
+2018-03-24 23:15:22: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:15:22: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m, scenarioFieldName: [32m'测试1'[39m, scenarioUpdate: [33m1521625093840[39m, titleFields: { [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5ab227fab172ac6135a8e1e6'[39m: [32m'test'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { fields: {} })
+2018-03-24 23:15:24: bool { _id: 5ab64c679bbe6b1f4031f27f,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aa75a8c3041154ac6f62300',
+  taskName: 'A师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896400011,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'A师傅',
+     '5aa64f91f5ff4657e418ab78': '小李1',
+     '5a5823f67d5d9a566b2d043d': '1234567',
+     '5a5824307d5d9a566b2d0449': '厦门',
+     '5a58240a7d5d9a566b2d0441': '1111',
+     '5a58241e7d5d9a566b2d0445': 'mac',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-01 12:59',
+     '5aa75a723041154ac6f622ee_date': '2018-03-02 12:59',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'N' },
+  __v: 0 }
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa75a8c3041154ac6f62300'[39m, taskName: [32m'A师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896400011[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'A师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小李1'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'厦门'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'1111'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'mac'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-01 12:59'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-02 12:59'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { fields: {} })
+2018-03-24 23:15:24: bool { _id: 5ab64c679bbe6b1f4031f280,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aa9e9624f3d293c1060f45b',
+  taskName: 'C师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896396105,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'C师傅',
+     '5a5823f67d5d9a566b2d043d': '246810',
+     '5a58241e7d5d9a566b2d0445': 'IPHONE',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-16 11:33',
+     '5aa75a723041154ac6f622ee_date': '2018-03-16 11:33',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Invoice',
+     '5a5824c950af13566589da75': 'Y',
+     '5a58240a7d5d9a566b2d0441': '333',
+     '5a5824307d5d9a566b2d0449': '福州',
+     '5aa64f91f5ff4657e418ab78': '小刘' },
+  __v: 0 }
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa9e9624f3d293c1060f45b'[39m, taskName: [32m'C师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896396105[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'C师傅'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'246810'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'IPHONE'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'333'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'福州'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小刘'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aab34580e337d240171b747'[39m }, { fields: {} })
+2018-03-24 23:15:24: bool { _id: 5ab64c679bbe6b1f4031f281,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aab34580e337d240171b747',
+  taskName: 'D师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896393232,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'D师傅',
+     '5aa64f91f5ff4657e418ab78': '小张',
+     '5a5823f67d5d9a566b2d043d': '1234567',
+     '5a5824307d5d9a566b2d0449': '南京',
+     '5a58240a7d5d9a566b2d0441': '444',
+     '5a58241e7d5d9a566b2d0445': 'aoc',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-09 11:05',
+     '5aa75a723041154ac6f622ee_date': '2018-03-18 11:05',
+     '5a58247b7d5d9a566b2d045c': 'N',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'N' },
+  __v: 0 }
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aab34580e337d240171b747'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aab34580e337d240171b747'[39m, taskName: [32m'D师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896393232[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'D师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小张'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'南京'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'444'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'aoc'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-09 11:05'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-18 11:05'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'N'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { fields: {} })
+2018-03-24 23:15:24: bool { _id: 5ab65219645c2422a4202be3,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394a8cfa3246169ca86b9',
+  taskName: 'hydemo_29',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897999928,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_29',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_29',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_29',
+     '5a5824307d5d9a566b2d0449': 'hydemo_29',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_29',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_29',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:33',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:33',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394a8cfa3246169ca86b9'[39m, taskName: [32m'hydemo_29'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897999928[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_29'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_29'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_29'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_29'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_29'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_29'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { fields: {} })
+2018-03-24 23:15:24: bool { _id: 5ab65219645c2422a4202be4,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394accfa3246169ca86f2',
+  taskName: 'hydemo_30',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897997103,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_30',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_30',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_30',
+     '5a5824307d5d9a566b2d0449': 'hydemo_30',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_30',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_30',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:34',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:34',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394accfa3246169ca86f2'[39m, taskName: [32m'hydemo_30'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897997103[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_30'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_30'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_30'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_30'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_30'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_30'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:15:24: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { fields: {} })
+bool { _id: 5ab65219645c2422a4202be5,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394b0b172ac6135a9c3e6',
+  taskName: 'hydemo_31',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897994713,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_31',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_31',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_31',
+     '5a5824307d5d9a566b2d0449': 'hydemo_31',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_31',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_31',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:34',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:34',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+[0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m, taskName: [32m'hydemo_31'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897994713[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_31'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_31'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_31'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_31'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_31'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_31'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+[0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { fields: {} })
+bool { _id: 5ab64c679bbe6b1f4031f282,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab4e7f0cfa3246169cb3437',
+  taskName: 'test',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521805312656,
+  __v: 0 }
+[0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m, taskName: [32m'test'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521805312656[39m, customfields: {} } }, {})
+[0;36mMongoose:[0m titles.remove({ scenarioFieldConfigId: { [32m'$nin'[39m: [ [32m'5aa220a1f5ff4657e417af87'[39m, [32m'5ab22670b172ac6135a8e0fc'[39m ] } }, {})
+[0;36mMongoose:[0m tasks.remove({ taskId: { [32m'$nin'[39m: [ [32m'5aa75a8c3041154ac6f62300'[39m, [32m'5aa9e9624f3d293c1060f45b'[39m, [32m'5aab34580e337d240171b747'[39m, [32m'5ab394a8cfa3246169ca86b9'[39m, [32m'5ab394accfa3246169ca86f2'[39m, [32m'5ab394b0b172ac6135a9c3e6'[39m, [32m'5ab4e7f0cfa3246169cb3437'[39m ] } }, {})
+2018-03-24 23:15:39: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.171] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.174] [INFO] http - [39mGod bless love....
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.175] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.176] [INFO] http - [39m
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.242] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:15:39: [32m[2018-03-24T23:15:39.244] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:15:40: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:15:40: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, scenarioFieldName: [32m'排班表'[39m, scenarioUpdate: [33m1521624688956[39m, titleFields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'安装师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'联系电话'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'安装地址'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'发票号'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'机器型号'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'是否付款'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order或Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'是否已通知客户'[39m } } }, {})
+2018-03-24 23:15:40: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:15:40: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m, scenarioFieldName: [32m'测试1'[39m, scenarioUpdate: [33m1521625093840[39m, titleFields: { [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5ab227fab172ac6135a8e1e6'[39m: [32m'test'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab64c679bbe6b1f4031f27f,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aa75a8c3041154ac6f62300',
+  taskName: 'A师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896400011,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'A师傅',
+     '5aa64f91f5ff4657e418ab78': '小李1',
+     '5a5823f67d5d9a566b2d043d': '1234567',
+     '5a5824307d5d9a566b2d0449': '厦门',
+     '5a58240a7d5d9a566b2d0441': '1111',
+     '5a58241e7d5d9a566b2d0445': 'mac',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-01 12:59',
+     '5aa75a723041154ac6f622ee_date': '2018-03-02 12:59',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'N' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa75a8c3041154ac6f62300'[39m, taskName: [32m'A师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896400011[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'A师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小李1'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'厦门'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'1111'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'mac'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-01 12:59'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-02 12:59'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab64c679bbe6b1f4031f280,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aa9e9624f3d293c1060f45b',
+  taskName: 'C师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896396105,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'C师傅',
+     '5a5823f67d5d9a566b2d043d': '246810',
+     '5a58241e7d5d9a566b2d0445': 'IPHONE',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-16 11:33',
+     '5aa75a723041154ac6f622ee_date': '2018-03-16 11:33',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Invoice',
+     '5a5824c950af13566589da75': 'Y',
+     '5a58240a7d5d9a566b2d0441': '333',
+     '5a5824307d5d9a566b2d0449': '福州',
+     '5aa64f91f5ff4657e418ab78': '小刘' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa9e9624f3d293c1060f45b'[39m, taskName: [32m'C师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896396105[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'C师傅'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'246810'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'IPHONE'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'333'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'福州'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小刘'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aab34580e337d240171b747'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab64c679bbe6b1f4031f281,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5aab34580e337d240171b747',
+  taskName: 'D师傅',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521896393232,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'D师傅',
+     '5aa64f91f5ff4657e418ab78': '小张',
+     '5a5823f67d5d9a566b2d043d': '1234567',
+     '5a5824307d5d9a566b2d0449': '南京',
+     '5a58240a7d5d9a566b2d0441': '444',
+     '5a58241e7d5d9a566b2d0445': 'aoc',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-09 11:05',
+     '5aa75a723041154ac6f622ee_date': '2018-03-18 11:05',
+     '5a58247b7d5d9a566b2d045c': 'N',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'N' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aab34580e337d240171b747'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aab34580e337d240171b747'[39m, taskName: [32m'D师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896393232[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'D师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小张'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'南京'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'444'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'aoc'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-09 11:05'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-18 11:05'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'N'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab65219645c2422a4202be3,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394a8cfa3246169ca86b9',
+  taskName: 'hydemo_29',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897999928,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_29',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_29',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_29',
+     '5a5824307d5d9a566b2d0449': 'hydemo_29',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_29',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_29',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:33',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:33',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394a8cfa3246169ca86b9'[39m, taskName: [32m'hydemo_29'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897999928[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_29'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_29'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_29'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_29'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_29'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_29'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab65219645c2422a4202be4,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394accfa3246169ca86f2',
+  taskName: 'hydemo_30',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897997103,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_30',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_30',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_30',
+     '5a5824307d5d9a566b2d0449': 'hydemo_30',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_30',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_30',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:34',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:34',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394accfa3246169ca86f2'[39m, taskName: [32m'hydemo_30'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897997103[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_30'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_30'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_30'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_30'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_30'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_30'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab65219645c2422a4202be5,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab394b0b172ac6135a9c3e6',
+  taskName: 'hydemo_31',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521897994713,
+  customfields: 
+   { '5aa220653041154ac6f5074b': 'hydemo_31',
+     '5aa64f91f5ff4657e418ab78': 'hydemo_31',
+     '5a5823f67d5d9a566b2d043d': 'hydemo_31',
+     '5a5824307d5d9a566b2d0449': 'hydemo_31',
+     '5a58240a7d5d9a566b2d0441': 'hydemo_31',
+     '5a58241e7d5d9a566b2d0445': 'hydemo_31',
+     '5aa75a65f5ff4657e418ca55_date': '2018-03-22 07:34',
+     '5aa75a723041154ac6f622ee_date': '2018-03-22 07:34',
+     '5a58247b7d5d9a566b2d045c': 'Y',
+     '5a5824af7d5d9a566b2d0462': 'Order',
+     '5a5824c950af13566589da75': 'Y' },
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m, taskName: [32m'hydemo_31'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897994713[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_31'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_31'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_31'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_31'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_31'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_31'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { fields: {} })
+2018-03-24 23:15:43: bool { _id: 5ab64c679bbe6b1f4031f282,
+  projectId: '5aa1e8c33041154ac6f49df8',
+  taskId: '5ab4e7f0cfa3246169cb3437',
+  taskName: 'test',
+  scenarioFieldConfigId: '5aa220a1f5ff4657e417af87',
+  update: 1521805312656,
+  __v: 0 }
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m, taskName: [32m'test'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521805312656[39m, customfields: {} } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m titles.remove({ scenarioFieldConfigId: { [32m'$nin'[39m: [ [32m'5aa220a1f5ff4657e417af87'[39m, [32m'5ab22670b172ac6135a8e0fc'[39m ] } }, {})
+2018-03-24 23:15:43: [0;36mMongoose:[0m tasks.remove({ taskId: { [32m'$nin'[39m: [ [32m'5aa75a8c3041154ac6f62300'[39m, [32m'5aa9e9624f3d293c1060f45b'[39m, [32m'5aab34580e337d240171b747'[39m, [32m'5ab394a8cfa3246169ca86b9'[39m, [32m'5ab394accfa3246169ca86f2'[39m, [32m'5ab394b0b172ac6135a9c3e6'[39m, [32m'5ab4e7f0cfa3246169cb3437'[39m ] } }, {})
+2018-03-24 23:17:11: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.679] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.682] [INFO] http - [39mGod bless love....
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.682] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.683] [INFO] http - [39m
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.733] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:17:11: [32m[2018-03-24T23:17:11.735] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:17:13: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:17:13: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, scenarioFieldName: [32m'排班表'[39m, scenarioUpdate: [33m1521624688956[39m, titleFields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'安装师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'联系电话'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'安装地址'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'发票号'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'机器型号'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'是否付款'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order或Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'是否已通知客户'[39m } } }, {})
+2018-03-24 23:17:13: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:17:13: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m, scenarioFieldName: [32m'测试1'[39m, scenarioUpdate: [33m1521625093840[39m, titleFields: { [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5ab227fab172ac6135a8e1e6'[39m: [32m'test'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa75a8c3041154ac6f62300'[39m, taskName: [32m'A师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896400011[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'A师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小李1'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'厦门'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'1111'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'mac'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-01 12:59'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-02 12:59'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa9e9624f3d293c1060f45b'[39m, taskName: [32m'C师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896396105[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'C师傅'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'246810'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'IPHONE'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'333'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'福州'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小刘'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aab34580e337d240171b747'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aab34580e337d240171b747'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aab34580e337d240171b747'[39m, taskName: [32m'D师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896393232[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'D师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小张'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'南京'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'444'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'aoc'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-09 11:05'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-18 11:05'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'N'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394a8cfa3246169ca86b9'[39m, taskName: [32m'hydemo_29'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897999928[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_29'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_29'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_29'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_29'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_29'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_29'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394accfa3246169ca86f2'[39m, taskName: [32m'hydemo_30'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897997103[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_30'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_30'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_30'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_30'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_30'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_30'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m, taskName: [32m'hydemo_31'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897994713[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_31'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_31'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_31'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_31'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_31'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_31'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { fields: {} })
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m, taskName: [32m'test'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521805312656[39m, customfields: {} } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m titles.remove({ scenarioFieldConfigId: { [32m'$nin'[39m: [ [32m'5aa220a1f5ff4657e417af87'[39m, [32m'5ab22670b172ac6135a8e0fc'[39m ] } }, {})
+2018-03-24 23:17:15: [0;36mMongoose:[0m tasks.remove({ taskId: { [32m'$nin'[39m: [ [32m'5aa75a8c3041154ac6f62300'[39m, [32m'5aa9e9624f3d293c1060f45b'[39m, [32m'5aab34580e337d240171b747'[39m, [32m'5ab394a8cfa3246169ca86b9'[39m, [32m'5ab394accfa3246169ca86f2'[39m, [32m'5ab394b0b172ac6135a9c3e6'[39m, [32m'5ab4e7f0cfa3246169cb3437'[39m ] } }, {})
+2018-03-24 23:27:34: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.246] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.248] [INFO] http - [39mGod bless love....
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.249] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.250] [INFO] http - [39m
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.288] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:27:34: [32m[2018-03-24T23:27:34.290] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:28:51: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.800] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.802] [INFO] http - [39mGod bless love....
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.803] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.804] [INFO] http - [39m
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.835] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:28:51: [32m[2018-03-24T23:28:51.837] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:30:00: [31m[2018-03-24T23:30:00.036] [ERROR] error - [39mthrow error: ReferenceError: logger is not defined
+    at Object.restart (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:44:5)
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:29:19)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:40:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:32:07: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.281] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.283] [INFO] http - [39mGod bless love....
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.283] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.284] [INFO] http - [39m
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.309] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:32:07: [32m[2018-03-24T23:32:07.311] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:46:32: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.127] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.129] [INFO] http - [39mGod bless love....
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.131] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.132] [INFO] http - [39m
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.155] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:46:32: [32m[2018-03-24T23:46:32.157] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:46:40: [32m[2018-03-24T23:46:40.310] [INFO] http - [39m
+
+Started GET /alltasks?project=5aa1e8c33041154ac6f49df8 ::ffff:127.0.0.1
+2018-03-24 23:46:40: [0;36mMongoose:[0m tasks.find({ projectId: [32m'5aa1e8c33041154ac6f49df8'[39m }, { sort: { update: [33m-1[39m }, fields: {} })
+2018-03-24 23:46:40: [32m[2018-03-24T23:46:40.348] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /alltasks?project=5aa1e8c33041154ac6f49df8 HTTP/1.1" 200 - "" "PostmanRuntime/7.1.1"
+2018-03-24 23:46:40: [32m[2018-03-24T23:46:40.350] [INFO] http - [39mCompleted 200 (40) ms
+2018-03-24 23:46:42: [32m[2018-03-24T23:46:42.152] [INFO] http - [39m
+
+Started GET /projectcustomfield?project=5aa1e8c33041154ac6f49df8 ::ffff:127.0.0.1
+2018-03-24 23:46:42: [32m[2018-03-24T23:46:42.718] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /projectcustomfield?project=5aa1e8c33041154ac6f49df8 HTTP/1.1" 200 - "" "PostmanRuntime/7.1.1"
+[32m[2018-03-24T23:46:42.721] [INFO] http - [39mCompleted 200 (569) ms
+2018-03-24 23:46:44: [32m[2018-03-24T23:46:44.035] [INFO] http - [39m
+
+Started GET /tbtask?project=5aa1e8c33041154ac6f49df8 ::ffff:127.0.0.1
+2018-03-24 23:46:44: [32m[2018-03-24T23:46:44.434] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /tbtask?project=5aa1e8c33041154ac6f49df8 HTTP/1.1" 200 - "" "PostmanRuntime/7.1.1"
+[32m[2018-03-24T23:46:44.437] [INFO] http - [39mCompleted 200 (401) ms
+2018-03-24 23:46:46: [32m[2018-03-24T23:46:46.454] [INFO] http - [39m
+
+Started GET /scenario?project=5aa1e8c33041154ac6f49df8 ::ffff:127.0.0.1
+2018-03-24 23:46:46: [32m[2018-03-24T23:46:46.731] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /scenario?project=5aa1e8c33041154ac6f49df8 HTTP/1.1" 200 - "" "PostmanRuntime/7.1.1"
+2018-03-24 23:46:46: [32m[2018-03-24T23:46:46.736] [INFO] http - [39mCompleted 200 (279) ms
+2018-03-24 23:46:48: [32m[2018-03-24T23:46:48.557] [INFO] http - [39m
+
+Started GET /title?scenarioId=5ab22670b172ac6135a8e0fc ::ffff:127.0.0.1
+2018-03-24 23:46:48: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:46:48: [32m[2018-03-24T23:46:48.566] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /title?scenarioId=5ab22670b172ac6135a8e0fc HTTP/1.1" 200 373 "" "PostmanRuntime/7.1.1"
+[32m[2018-03-24T23:46:48.568] [INFO] http - [39mCompleted 200 (11) ms
+2018-03-24 23:46:50: [32m[2018-03-24T23:46:50.517] [INFO] http - [39m
+
+Started GET /task?scenarioId=5aa220a1f5ff4657e417af87&current=3&pageSize=1 ::ffff:127.0.0.1
+2018-03-24 23:46:50: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:46:50: [0;36mMongoose:[0m tasks.find({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, [32m'$or'[39m: [ { [32m'customfields.5aa220653041154ac6f5074b'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa64f91f5ff4657e418ab78'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5823f67d5d9a566b2d043d'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824307d5d9a566b2d0449'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58240a7d5d9a566b2d0441'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58241e7d5d9a566b2d0445'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa75a65f5ff4657e418ca55_date'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa75a723041154ac6f622ee_date'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58247b7d5d9a566b2d045c'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824af7d5d9a566b2d0462'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824c950af13566589da75'[39m: [31m/(?:)/i[39m } ] }, { sort: { update: [33m-1[39m }, skip: [33m2[39m, limit: [33m1[39m, fields: {} })
+2018-03-24 23:46:50: [0;36mMongoose:[0m tasks.count({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, [32m'$or'[39m: [ { [32m'customfields.5aa220653041154ac6f5074b'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa64f91f5ff4657e418ab78'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5823f67d5d9a566b2d043d'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824307d5d9a566b2d0449'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58240a7d5d9a566b2d0441'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58241e7d5d9a566b2d0445'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa75a65f5ff4657e418ca55_date'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5aa75a723041154ac6f622ee_date'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a58247b7d5d9a566b2d045c'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824af7d5d9a566b2d0462'[39m: [31m/(?:)/i[39m }, { [32m'customfields.5a5824c950af13566589da75'[39m: [31m/(?:)/i[39m } ] }, {})
+2018-03-24 23:46:50: [32m[2018-03-24T23:46:50.531] [INFO] http - [39m::ffff:127.0.0.1 - - "GET /task?scenarioId=5aa220a1f5ff4657e417af87&current=3&pageSize=1 HTTP/1.1" 200 670 "" "PostmanRuntime/7.1.1"
+2018-03-24 23:46:50: [32m[2018-03-24T23:46:50.532] [INFO] http - [39mCompleted 200 (15) ms
+2018-03-24 23:47:02: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.709] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.711] [INFO] http - [39mGod bless love....
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.712] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.713] [INFO] http - [39m
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.736] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:47:02: [32m[2018-03-24T23:47:02.737] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:48:02: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.010] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.012] [INFO] http - [39mGod bless love....
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.014] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.015] [INFO] http - [39m
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.044] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:48:03: [32m[2018-03-24T23:48:03.046] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:49:00: 
+2018-03-24 23:49:02: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.925] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.929] [INFO] http - [39mGod bless love....
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.930] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.931] [INFO] http - [39m
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.962] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:49:02: [32m[2018-03-24T23:49:02.965] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:50:00: operation-err: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:42:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:50:02: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.950] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.952] [INFO] http - [39mGod bless love....
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.952] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.953] [INFO] http - [39m
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.993] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:50:02: [32m[2018-03-24T23:50:02.997] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:50:21: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:50:21: [32m[2018-03-24T23:50:21.722] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:50:21: [32m[2018-03-24T23:50:21.724] [INFO] http - [39mGod bless love....
+2018-03-24 23:50:21: [32m[2018-03-24T23:50:21.726] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+[32m[2018-03-24T23:50:21.726] [INFO] http - [39m
+2018-03-24 23:50:21: [32m[2018-03-24T23:50:21.753] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:50:21: [32m[2018-03-24T23:50:21.755] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:51:00: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:51:00: operation-err: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:51:00: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:51:02: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.758] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.761] [INFO] http - [39mGod bless love....
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.763] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.764] [INFO] http - [39m
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.797] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:51:02: [32m[2018-03-24T23:51:02.803] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:52:00: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:52:00: operation-err: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:52:00: ReferenceError: moment is not defined
+    at Object.operation (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:15:15)
+    at Job._nodeSchedule2.default.scheduleJob [as job] (E:/node.js/git/tabel/statistic_table/server/controller/operation.js:43:12)
+    at Job.invoke (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:173:10)
+    at E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:543:11
+    at Timeout._onTimeout (E:\node.js\git\tabel\node_modules\_node-schedule@1.3.0@node-schedule\lib\schedule.js:501:7)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+2018-03-24 23:52:03: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.076] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.078] [INFO] http - [39mGod bless love....
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.080] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.081] [INFO] http - [39m
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.112] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:52:03: [32m[2018-03-24T23:52:03.114] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:52:59: config Config {
+  name: 'statistic_table',
+  port: '8000',
+  host: 'localhost',
+  mongo: { url: 'mongodb://127.0.0.1/statistic_table' },
+  redis: { host: '127.0.0.1', port: 6379, db: 10, pass: '' },
+  session_secret: 'table_secret',
+  auth_cookie_name: 'statistic_table',
+  mongodb_debug: true,
+  api: 'http://salesdemo.teambition.net',
+  account_api: 'http://salesdemo.teambition.net',
+  clientId: '42096170-f743-11e7-b297-3d5e40c4d20d',
+  clientSecret: '16724a57-bbf9-404f-8ea6-95394be79fbf',
+  organizationId: '5a42ff2dbe825b73278d13c1',
+  projectId: '5aa1e8c33041154ac6f49df8',
+  account: { email: 'oyxj1989@163.com', pwd: 'oyxj19891024' } }
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.399] [INFO] http - [39mstatistic_table listening on port 8000
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.401] [INFO] http - [39mGod bless love....
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.403] [INFO] http - [39mYou can debug your app with
+   http://localhost:8000
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.403] [INFO] http - [39m
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.439] [INFO] mongoose - [39mmongoose open success
+2018-03-24 23:52:59: [32m[2018-03-24T23:52:59.441] [INFO] mongoose - [39m[mongoose log] Successfully connected to:  mongodb://127.0.0.1/statistic_table
+2018-03-24 23:53:00: 2018-03-24 23:53:00
+      -------{开始}--------
+2018-03-24 23:53:01: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:53:01: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, scenarioFieldName: [32m'排班表'[39m, scenarioUpdate: [33m1521624688956[39m, titleFields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'安装师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'联系电话'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'安装地址'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'发票号'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'机器型号'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'是否付款'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order或Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'是否已通知客户'[39m } } }, {})
+2018-03-24 23:53:01: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:53:01: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m, scenarioFieldName: [32m'测试1'[39m, scenarioUpdate: [33m1521625093840[39m, titleFields: { [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5ab227fab172ac6135a8e1e6'[39m: [32m'test'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa75a8c3041154ac6f62300'[39m, taskName: [32m'A师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896400011[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'A师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小李1'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'厦门'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'1111'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'mac'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-01 12:59'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-02 12:59'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa9e9624f3d293c1060f45b'[39m, taskName: [32m'C师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896396105[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'C师傅'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'246810'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'IPHONE'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'333'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'福州'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小刘'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aab34580e337d240171b747'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aab34580e337d240171b747'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aab34580e337d240171b747'[39m, taskName: [32m'D师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896393232[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'D师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小张'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'南京'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'444'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'aoc'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-09 11:05'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-18 11:05'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'N'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394a8cfa3246169ca86b9'[39m, taskName: [32m'hydemo_29'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897999928[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_29'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_29'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_29'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_29'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_29'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_29'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394accfa3246169ca86f2'[39m, taskName: [32m'hydemo_30'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897997103[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_30'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_30'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_30'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_30'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_30'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_30'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m, taskName: [32m'hydemo_31'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897994713[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_31'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_31'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_31'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_31'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_31'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_31'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { fields: {} })
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m, taskName: [32m'test'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521805312656[39m, customfields: {} } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m titles.remove({ scenarioFieldConfigId: { [32m'$nin'[39m: [ [32m'5aa220a1f5ff4657e417af87'[39m, [32m'5ab22670b172ac6135a8e0fc'[39m ] } }, {})
+2018-03-24 23:53:03: [0;36mMongoose:[0m tasks.remove({ taskId: { [32m'$nin'[39m: [ [32m'5aa75a8c3041154ac6f62300'[39m, [32m'5aa9e9624f3d293c1060f45b'[39m, [32m'5aab34580e337d240171b747'[39m, [32m'5ab394a8cfa3246169ca86b9'[39m, [32m'5ab394accfa3246169ca86f2'[39m, [32m'5ab394b0b172ac6135a9c3e6'[39m, [32m'5ab4e7f0cfa3246169cb3437'[39m ] } }, {})
+2018-03-24 23:53:03: 2018-03-24 23:53:03
+      ----{结束}----
+2018-03-24 23:54:00: 2018-03-24 23:54:00
+      -------{开始}--------
+2018-03-24 23:54:01: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { fields: {} })
+2018-03-24 23:54:01: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, scenarioFieldName: [32m'排班表'[39m, scenarioUpdate: [33m1521624688956[39m, titleFields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'安装师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'联系电话'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'安装地址'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'发票号'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'机器型号'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'是否付款'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order或Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'是否已通知客户'[39m } } }, {})
+2018-03-24 23:54:01: [0;36mMongoose:[0m titles.findOne({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { fields: {} })
+2018-03-24 23:54:01: [0;36mMongoose:[0m titles.update({ scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, scenarioFieldConfigId: [32m'5ab22670b172ac6135a8e0fc'[39m, scenarioFieldName: [32m'测试1'[39m, scenarioUpdate: [33m1521625093840[39m, titleFields: { [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'安装日期'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'客户'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'提货日期'[39m, [32m'5ab227fab172ac6135a8e1e6'[39m: [32m'test'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa75a8c3041154ac6f62300'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa75a8c3041154ac6f62300'[39m, taskName: [32m'A师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896400011[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'A师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小李1'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'厦门'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'1111'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'mac'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-01 12:59'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-02 12:59'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aa9e9624f3d293c1060f45b'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aa9e9624f3d293c1060f45b'[39m, taskName: [32m'C师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896396105[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'C师傅'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'246810'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'IPHONE'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-16 11:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Invoice'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'333'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'福州'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小刘'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5aab34580e337d240171b747'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5aab34580e337d240171b747'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5aab34580e337d240171b747'[39m, taskName: [32m'D师傅'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521896393232[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'D师傅'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'小张'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'1234567'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'南京'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'444'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'aoc'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-09 11:05'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-18 11:05'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'N'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'N'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394a8cfa3246169ca86b9'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394a8cfa3246169ca86b9'[39m, taskName: [32m'hydemo_29'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897999928[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_29'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_29'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_29'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_29'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_29'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_29'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:33'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394accfa3246169ca86f2'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394accfa3246169ca86f2'[39m, taskName: [32m'hydemo_30'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897997103[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_30'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_30'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_30'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_30'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_30'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_30'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab394b0b172ac6135a9c3e6'[39m, taskName: [32m'hydemo_31'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521897994713[39m, customfields: { [32m'5aa220653041154ac6f5074b'[39m: [32m'hydemo_31'[39m, [32m'5aa64f91f5ff4657e418ab78'[39m: [32m'hydemo_31'[39m, [32m'5a5823f67d5d9a566b2d043d'[39m: [32m'hydemo_31'[39m, [32m'5a5824307d5d9a566b2d0449'[39m: [32m'hydemo_31'[39m, [32m'5a58240a7d5d9a566b2d0441'[39m: [32m'hydemo_31'[39m, [32m'5a58241e7d5d9a566b2d0445'[39m: [32m'hydemo_31'[39m, [32m'5aa75a65f5ff4657e418ca55_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5aa75a723041154ac6f622ee_date'[39m: [32m'2018-03-22 07:34'[39m, [32m'5a58247b7d5d9a566b2d045c'[39m: [32m'Y'[39m, [32m'5a5824af7d5d9a566b2d0462'[39m: [32m'Order'[39m, [32m'5a5824c950af13566589da75'[39m: [32m'Y'[39m } } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.findOne({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { fields: {} })
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.update({ taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m }, { [32m'$set'[39m: { projectId: [32m'5aa1e8c33041154ac6f49df8'[39m, taskId: [32m'5ab4e7f0cfa3246169cb3437'[39m, taskName: [32m'test'[39m, scenarioFieldConfigId: [32m'5aa220a1f5ff4657e417af87'[39m, update: [33m1521805312656[39m, customfields: {} } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m titles.remove({ scenarioFieldConfigId: { [32m'$nin'[39m: [ [32m'5aa220a1f5ff4657e417af87'[39m, [32m'5ab22670b172ac6135a8e0fc'[39m ] } }, {})
+2018-03-24 23:54:04: [0;36mMongoose:[0m tasks.remove({ taskId: { [32m'$nin'[39m: [ [32m'5aa75a8c3041154ac6f62300'[39m, [32m'5aa9e9624f3d293c1060f45b'[39m, [32m'5aab34580e337d240171b747'[39m, [32m'5ab394a8cfa3246169ca86b9'[39m, [32m'5ab394accfa3246169ca86f2'[39m, [32m'5ab394b0b172ac6135a9c3e6'[39m, [32m'5ab4e7f0cfa3246169cb3437'[39m ] } }, {})
+2018-03-24 23:54:04: 2018-03-24 23:54:04
+      ----{结束}----

@@ -52,7 +52,7 @@ export default {
       });
       return customfields;
     } catch (err) {
-      console.log(err);
+      throw new Error('updateTaskField-error:', err);
     }
   },
   /**
@@ -96,7 +96,7 @@ export default {
       }
       return tasks;
     } catch (err) {
-      console.log(err);
+      throw new Error('group-err:', err);
     }
   },
   /**
@@ -120,14 +120,13 @@ export default {
           task.update = 0;
         }
         if (bool) {
-          console.log('bool', bool);
           await Task.updateTask(task);
         } else {
           await Task.insertTask(task);
         }
       } 
     } catch (err) {
-      console.log(err);
+      throw new Error('updateTask-err:', err);
     }
   },
 };

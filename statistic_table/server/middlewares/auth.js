@@ -52,7 +52,6 @@ export default {
       return next();
     } else {
       const auth_token = req.signedCookies[config.auth_cookie_name];
-      console.log('auth_token', auth_token);
       if (!auth_token) {
         return res.sendstatus(400).json({name: 'InvalidCode', 
           message: '无效的 token'});

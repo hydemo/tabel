@@ -11,7 +11,7 @@ import './models/db';
 import routers from './routers';
 import config from 'config';
 import {http_log, logger} from './common/logger';
-import test from './controller/test'
+import operation from './controller/operation'
 
 
 console.log('config', config);
@@ -42,7 +42,7 @@ app.use(
     saveUninitialized: true
   })
 );
-test.operation();
+operation.timeTask();
 app.use('/', routers);
 
 // 处理404

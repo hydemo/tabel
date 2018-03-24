@@ -6,15 +6,14 @@ import moment from 'moment';
 
 export default {
   async downXlsx(scenarioId) {
-    let title = await Title.getTitleById(scenarioId);
+    try {
+      let title = await Title.getTitleById(scenarioId);
     let _headers = [];
     let _headerIds = [];
-    console.log(title);
     for (let key in title.titleFields) {
       _headers.push(title.titleFields[key]);
       _headerIds.push(key);
     }
-    console.log('headerIds', _headerIds);
     let tasks = await Task.getTaskByScenarioId(scenarioId);
     let _data = [];
     for (let task of tasks) {
@@ -43,5 +42,8 @@ export default {
     let filename =  
     `${moment().format('YYYY-MM-DD')}${title.scenarioFieldName}.xlsx`;
     return { filename: filename }
+    } catch (err) {
+      throw new Error('downloadXLSX-err:', err);
+    }
   },
 }
