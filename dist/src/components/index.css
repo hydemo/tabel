@@ -1,0 +1,30 @@
+
+.contain {
+  width: 100%;
+}
+
+.tit{
+  font-size: 19px;
+  font-weight: 900;
+  height: 4%;
+}
+
+.tit-cotain {
+
+}
+
+.table{
+  height: 400px;
+}
+.download{
+  float: right;
+}
+.content{
+  height: 100%;
+}
+.type{
+  float: right;
+}
+.header{
+  padding: 10px 0px;
+}
